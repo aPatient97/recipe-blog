@@ -1,0 +1,125 @@
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* start of logo and navbar *//* start of logo and navbar *//* start of logo and navbar *//* start of logo and navbar */
+
+header {
+    position: fixed;
+    top:0; left: 0; right: 0;
+    background: rgb(172, 206, 172);
+    box-shadow: 0 5px 10px black;
+    padding: 25 px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 25px;
+    
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: rgb(207, 125, 180);
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    background-color: rgb(138, 190, 151);
+    color: azure;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: white;
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+header .navbar ul li ul li ul{
+    left: 200px;
+    top:0;
+}
+
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+
+.logo {
+    position: relative;
+    width: 70px;
+    height: 60px;
+}
+
+/* end of navbar *//* end of navbar *//* end of navbar *//* end of navbar */
+
+
+/* start of footer *//* start of footer *//* start of footer *//* start of footer */
+.container{
+    max-width: 100%;
+    background-color: rgb(138, 190, 151);
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer{
+    box-sizing: border-box;
+    display: grid;
+    /* position: relative; */
+    /* margin-top: 600px; */
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 5%;
+    padding-top: 20px;
+    background-color: rgb(138, 190, 151);
+   
+}
+
+footer *{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.footer-column{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-column h4{
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 200;
+}
