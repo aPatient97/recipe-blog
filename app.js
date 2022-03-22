@@ -2,10 +2,12 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const port = 3000;
-const recipes = require("./data.json");
+const blogs = require("./data");
+const bodyParser = require("body-parser");
 
 app.use(cors());
-// const selected = api[0];
+
+app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
   res.send(
@@ -13,15 +15,23 @@ app.get("/", (req, res) => {
   );
 });
 
-app.get("/recipes", (req, res) => {
-  res.send(recipes);
+app.get("/blogs", (req, res) => {
+  res.send(blogs);
 });
 
-app.get("/recipes/selected", (req, res) => {
-  res.send(recipes[0]);
+app.get("/blogs/selected", (req, res) => {
+  res.send(blogs[0]);
 });
 
 app.listen(port, function () {
   console.log(`server is up and running on port ${port}`);
 });
 
+app.post("/blogs", (req, res) => {
+  const newBlog = req.body;
+  blogs.blogs.push(newBlog);
+  res.send({
+    message: `${newBlog.title} successfully added to our collection`,
+  });
+  console.log(blogs);
+});

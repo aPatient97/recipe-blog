@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #52b69a;
+  font-family: "Work Sans", sans-serif;
+}
+
+
+
+h1 {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+form {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  padding: 2em 0em;
+}
+
+form input {
+  padding: 1.5em;
+  margin: 1em 2em;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: solid 0.5px #52b69a;
+}
+
+textarea {
+    padding: 1.5em;
+    margin: 1em 2em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: solid 0.5px #52b69a;
+}
+
+#form-div {
+  background-color: white;
+  margin: 2em 2em;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width:760px) {
+    #form-div {
+        margin: 2em 10em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #form-div {
+        margin: 2em 20em;
+    }
+}
+
+#submit {
+    font-size: 1em;
+    background-color: #99D98C;
+    cursor: pointer;
+    
+}
+
+label {
+    padding: 0em 1em 0em 1em;
+}
