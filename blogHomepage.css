@@ -34,13 +34,7 @@ div > article > h2 {
   height: 220vh
 }
 
-.grid img {
-  width: 400px;
-  height: 300px;
-  cursor: pointer;
-}
-
-.grid article{
+.grid article {
   width: 400px;
   height: 300px;
   cursor: pointer
@@ -70,9 +64,7 @@ div > article > h2 {
   border: 3px solid white;
 }
 
-
-
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 760px) { 
   .grid{
      grid-template-columns: 1fr;
   }
