@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  background-color:rgb(172, 204, 180, 0.8);
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(172, 204, 180, 0.8);
+}
+
+article {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 95%;
+  border-radius: 5px;
+  width: 400px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border: solid 0.5px #52b69a;
+  border-radius: 5px;
+  padding: 1.5em;
+}
+
+div > article > h1 {
+  background-color: rgb(255, 255, 255)
+}
+
+div > article > p {
+  background-color: rgb(255, 255, 255)
+  
+}
+
+p {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: solid 0.5px #52b69a;
+  padding: 1.5em;
+  margin: 1em;
+}
+
+div > article > h2 {
+  margin-top: 5px;
+  background-color: rgb(255, 255, 255)
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,400px);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 30px;
+  height: 250vh
+}
+
+
+.grid article{
+  width: 350px;
+  height: 300px;
+  cursor: pointer
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox article {
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+  background-color: rgb(237, 245, 233);
+  border: solid 1px #52b69a;
+}
+
+
+
+@media only screen and (max-width: 760px){
+  .grid{
+     grid-template-columns: 1fr;
+  }
+}
+
+h1 {
+  font-size: large;
+}
+
+h2{
+  font-size: medium;
+  ;
+}
+
+p{
+  font-size: small;
+}
