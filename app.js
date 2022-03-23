@@ -1,37 +1,50 @@
-const express = require("express");
-const app = express();
-const cors = require("cors");
-const port = 3000;
-const blogs = require("./data");
-const bodyParser = require("body-parser");
+const express = require("express")
+const app = express()
+const cors = require("cors")
+const port = 5000;
+const bodyParser = require("body-parser")
+const fs = require('fs')
+const blogdata = require("./blogdata.json")
 
-app.use(cors());
+app.use(cors())
 
-app.use(bodyParser.json());
+app.use(bodyParser.json())
 
 app.get("/", (req, res) => {
-  res.send(
-    "welcome to localhost food recipe's guys, everything is full working with the local server"
-  );
-});
+  res.send('Welcome to Anonoblog')
+})
 
-app.get("/blogs", (req, res) => {
-  res.send(blogs);
-});
+app.get("/blogdata", (req, res) => {
+  res.send(blogdata)
+})
 
-app.get("/blogs/selected", (req, res) => {
-  res.send(blogs[0]);
-});
+//we recieve the new blog data and push it to the blogdata json
+app.post("/blogdata", (req, res) => {
+  const newBlog = req.body
+    fs.readFile('./blogdata.json', 'utf-8', (err, data) => {
+      if (err) {
+          console.log(`Error reading file: ${err}`)
+      } else {
+
+          //parse json string to json object
+
+          const blogdata = JSON.parse(data)
+
+          //add a new record
+
+          blogdata.blogs.push(newBlog)
+
+          //write new data back to the file
+
+          fs.writeFile('./blogdata.json', JSON.stringify(blogdata, null, 2), (err) => {
+              if (err) {
+                  console.log(`Error writing file: ${err}`)
+              }
+          })
+      }
+  })
+})
 
 app.listen(port, function () {
-  console.log(`server is up and running on port ${port}`);
-});
-
-app.post("/blogs", (req, res) => {
-  const newBlog = req.body;
-  blogs.blogs.push(newBlog);
-  res.send({
-    message: `${newBlog.title} successfully added to our collection`,
-  });
-  console.log(blogs);
-});
+  console.log(`server is up and running on port ${port}`)
+})
