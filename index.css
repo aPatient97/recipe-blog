@@ -1,3 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+
+*{
+  margin:0; 
+  padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(172, 204, 180, 0.8);
+  position: relative;
+}
+
+#Anonobloglogo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  padding-left: 0.8%;
+  text-decoration: none;
+}
+
+article {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 95%;
+  border-radius: 5px;
+  width: 400px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border: solid 0.5px #52b69a;
+  border-radius: 5px;
+  padding: 1.5em;
+}
+
+div > article > h1 {
+  background-color: rgb(255, 255, 255)
+}
+
+div > article > p {
+  background-color: rgb(255, 255, 255)
+  
+}
+
+p {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: solid 0.5px #52b69a;
+  padding: 1.5em;
+  margin: 1em;
+}
+
+div > article > h2 {
+  margin-top: 5px;
+  background-color: rgb(255, 255, 255)
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,400px);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 30px;
+  height: 250vh
+}
+
+
+.grid article{
+  width: 350px;
+  height: 300px;
+  cursor: pointer
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox article {
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+  background-color: rgb(237, 245, 233);
+  border: solid 1px #52b69a;
+}
+
+
+
+@media only screen and (max-width: 760px){
+  .grid{
+     grid-template-columns: 1fr;
+  }
+}
+
+h1 {
+  font-size: large;
+}
+
+h2{
+  font-size: medium;
+  ;
+}
+
+p{
+  font-size: small;
+}
+
+
 *{
     margin:0; 
     padding:0;
@@ -8,8 +128,9 @@
 }
 
 #logo {
-    font-family: 'Caveat', cursive;
-    font-size: 50px;
+    /* width: 2px;
+    height: 2px; */
+    opacity: 0.5;
 }
 
 #logo a {
@@ -18,7 +139,7 @@
 
 header {
     top:0; left: 0; right: 0;
-    background: rgb(172, 206, 172);
+    background: #3e9c98;
     box-shadow: 0 5px 10px black;
     padding: 25 px 9%;
     display: flex;
@@ -36,17 +157,18 @@ header .logo{
 header .navbar ul li{
     position: relative;
     float: left;
+    font-family: 'Work Sans', sans-serif;
 }
 
 header .navbar ul li a{
     font-size: 23px;
     padding: 20px;
-    color: rgb(207, 125, 180);
+    color: rgb(9, 31, 39);
     display: block;
 }
 
 header .navbar ul li a:hover{
-    background-color: rgb(138, 190, 151);
+    background-color: rgb(39, 138, 151);
     color: azure;
 }
 
@@ -72,7 +194,16 @@ header .navbar ul li:hover > ul{
     display: initial;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 809px) {
+
+  header .navbar ul li a{
+    font-size: 20px;
+    padding: 15px;
+}
+}
+
+
+@media screen and (max-width: 732px) {
 
 header .navbar ul li a{
     font-size: 20px;
@@ -80,13 +211,62 @@ header .navbar ul li a{
 }
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 701px) {
+
+  header .navbar ul li a{
+      font-size: 17px;
+      padding: 5px;
+  }
+  }
+
+@media screen and (max-width: 692px) {
 
 header .navbar ul li a{
     font-size: 17px;
     padding: 5px;
 }
 }
+
+@media screen and (max-width: 691px) {
+
+  header .navbar ul li a{
+      font-size: 17px;
+      padding: 5px;
+  }
+  }
+
+@media screen and (max-width: 623px) {
+
+  header .navbar ul li a{
+      font-size: 14px;
+      padding: 5px;
+  }
+  }
+
+  @media screen and (max-width: 575px) {
+
+    header .navbar ul li a{
+        font-size: 12px;
+        padding: 5px;
+    }
+    }
+
+  @media screen and (max-width: 543px) {
+
+    header .navbar ul li a{
+        font-size: 10px;
+        padding: 5px;
+    }
+    }
+
+
+  @media screen and (max-width: 512px) {
+
+      header .navbar ul li a{
+          font-size: 8px;
+          padding: 5px;
+      }
+      }  
 
 
 .logo {
@@ -104,11 +284,6 @@ header .navbar ul li a{
     text-align: center;
 }
 
-.heart-emoji, .thumbs-down-emoji {
-    font-size: 30px;
-    background-color: palevioletred;
-    cursor: pointer;
-}
 
 #thumbsUpEmoji, #heartEmoji, #laughEmoji {
     font-size: 30px;
@@ -120,102 +295,79 @@ header .navbar ul li a{
 }
 
 footer {
-    background-color: rgb(172, 206, 172);
-    width: 100vw;
-    position: relative;
-    padding: 20px;
-    display: block;
-    text-align: center;
-    display: flex;
-    bottom: 0px;
-    margin: 0;
-    bottom: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+  background-color: #3e9c98;
+  width: 100vw;
+  position: relative;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  display: flex;
+  bottom: 0px;
+  margin: 0;
+  bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
+
 .footer-list {
-    display: inline;
-    margin-left: 30px;
+  display: inline;
+  margin-left: 30px;
 }
 
 h3 {
-    display: inline;
-    margin-left: 30px;
+  display: inline;
+  margin-left: 30px;
 }
 
 div {
-    display: inline;
+  display: inline;
 }
-
-
-
-/* .footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-content h3{
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-
-.footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 8px;
-} */
 
 ul {
-    display: inline;
-    margin-left: -20px;
+  display: inline;
+  margin-left: -20px;
 }
 
 .footer-content ul li a:hover{
-    color: black;
-    padding-left: 15px;
+  color: black;
+  padding-left: 15px;
 }
 
 .social {
-    display: inline;
-    width: 80px;
-    margin: 10px, 10px, 10px, 0;
-    text-align: center;
-    line-height: 40px;
-    color: white;
-    transition: all 0.5s ease;
-    font-size: 25px;
-    padding-left: 10px;
+  display: inline;
+  width: 80px;
+  margin: 10px, 10px, 10px, 0;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  transition: all 0.5s ease;
+  font-size: 25px;
+  padding-left: 10px;
 }
 
 .social a:hover{
-    color: palevioletred;
-    background-color: white;
+  color: rgb(39, 138, 151);
+  background-color: white;
 }
 
 @media screen and (max-width: 1360px) {
 
 .follow-us {
-    display: block;
+  display: block;
 }
 }
 
 @media screen and (max-width: 1135px) {
 
 .contact {
-    display: block;
+  display: block;
 }
 }
 
 @media screen and (max-width: 500px) {
 
 a {
-    display: block;
+  display: block;
 }
 }
