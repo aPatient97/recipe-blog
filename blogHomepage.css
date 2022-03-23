@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
 * {
-  margin: 1rem;
-  background-color:rgb(250, 237, 226);
-  font-family: Helvetica, sans-serif;
+  margin: 0;
+  background-color:rgb(172, 204, 180, 0.8);
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(172, 204, 180, 0.8);
 }
 
 article {
@@ -10,19 +16,32 @@ article {
   border-radius: 5px;
   width: 400px;
   height: 300px;
-  background-color: rgb(252, 213, 206);
+  background-color: rgb(255, 255, 255);
+  border: solid 0.5px #52b69a;
+  border-radius: 5px;
+  padding: 1.5em;
 }
 
 div > article > h1 {
-  background-color: rgb(252, 213, 206)
+  background-color: rgb(255, 255, 255)
 }
 
 div > article > p {
-  background-color: rgb(252, 213, 206)
+  background-color: rgb(255, 255, 255)
+  
+}
+
+p {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: solid 0.5px #52b69a;
+  padding: 1.5em;
+  margin: 1em;
 }
 
 div > article > h2 {
-  background-color: rgb(252, 213, 206)
+  margin-top: 5px;
+  background-color: rgb(255, 255, 255)
 }
 
 .grid {
@@ -31,12 +50,12 @@ div > article > h2 {
   justify-content: center;
   align-content: center;
   grid-gap: 30px;
-  height: 220vh
+  height: 250vh
 }
 
 
 .grid article{
-  width: 400px;
+  width: 350px;
   height: 300px;
   cursor: pointer
 }
@@ -61,8 +80,8 @@ div > article > h2 {
   max-width: 90%;
   max-height: 80%;
   padding: 4px;
-  background-color: rgb(252, 213, 206);
-  border: 3px solid white;
+  background-color: rgb(237, 245, 233);
+  border: solid 1px #52b69a;
 }
 
 
