@@ -16,12 +16,12 @@
   padding-left: 0.8%;
 }
 
-#newlogo {
+/* #newlogo {
     position: relative;
     opacity: 0.9;
     padding-top: 0.3%;
     padding-left: 0.5%;
-}
+} */
 
 #logo {
     position: relative;
@@ -89,16 +89,13 @@ header .navbar ul li:hover > ul{
 }
 
 @media screen and (max-width: 809px) {
-
 header .navbar ul li a{
   font-size: 20px;
   padding: 15px;
 }
 }
 
-
 @media screen and (max-width: 732px) {
-
 header .navbar ul li a{
   font-size: 20px;
   padding: 10px;
@@ -106,7 +103,6 @@ header .navbar ul li a{
 }
 
 @media screen and (max-width: 701px) {
-
 header .navbar ul li a{
     font-size: 17px;
     padding: 5px;
@@ -114,7 +110,6 @@ header .navbar ul li a{
 }
 
 @media screen and (max-width: 692px) {
-
 header .navbar ul li a{
   font-size: 17px;
   padding: 5px;
@@ -146,7 +141,6 @@ header .navbar ul li a{
   }
 
 @media screen and (max-width: 543px) {
-
   header .navbar ul li a{
       font-size: 10px;
       padding: 5px;
@@ -155,7 +149,6 @@ header .navbar ul li a{
 
 
 @media screen and (max-width: 512px) {
-
     header .navbar ul li a{
         font-size: 8px;
         padding: 5px;
