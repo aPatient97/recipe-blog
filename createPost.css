@@ -10,11 +10,31 @@ body {
 }
 
 
+.create-post-header {
+  display: flex;
+  justify-content: space-between;
+}
 
-h1 {
+a {
+  text-decoration: none;
+}
+
+h1{
   color: white;
-  text-align: center;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-size: 2em;
+  margin: 0.5em 1em 0em 0em;
+  padding: 0.5em 1em;
+}
+
+h2 {
+  color: white;
+  text-align: left;
+  justify-self: flex-start;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-size: 2em;
+  margin: 0.5em 0em;
+  padding: 0.5em 1em;
 }
 
 form {
@@ -71,4 +91,33 @@ textarea {
 
 label {
     padding: 0em 1em 0em 1em;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+#blog-btn, #home-btn {
+  margin: 1em;
+  padding: 1.5em;
+  border-radius: 5px;
+  border: solid #99D98C;
+  background-color: #99D98C;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#blog-btn:hover, #home-btn:hover {
+  background-color: white;
+  color: #99D98C;
 }

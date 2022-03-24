@@ -12,6 +12,10 @@ const fetchBlogs = () => {
         const content = document.createElement("p")
         const div = document.createElement("article")
 
+        // const button1 = document.createElement("button")
+        // const button2 = document.createElement("button")
+        // const button3 = document.createElement("button")
+
     //Adding in text content
         title.textContent = data.blogs[i].title // add relevant classes here
         date.textContent = data.blogs[i].date //add classes here
@@ -55,7 +59,7 @@ form.addEventListener("submit", (e) => {
         // .then((data) => {
         //   console.log(data)
         // })
-
+      window.location.href="./submitted.html"
   } else {
       alert('Please ensure all fields are filled in and that the content field is 1000 characters or less.')
   }

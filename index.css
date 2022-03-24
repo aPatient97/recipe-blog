@@ -2,27 +2,36 @@
 
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
+h1 {
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-size: 2em;
+  margin: 1em 1em 0em 0em;
+  padding: 0.5em 1em;
+}
+
+p#info {
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-size: 1.5em;
+  margin: 0.5em 1em 1em 0.5em;
+  padding: 0.5em 1em;
+}
 
 /* NAVIGATION */
-
-
-#logo {
-  position: relative;
-  /* opacity: 0.9; */
-  /* padding-bottom: 0.6%; */
-  /* padding-bottom: 10%; */
-  padding-left: 0.2%;
-}
-
 
 header {
   top: 0;
   left: 0;
   right: 0;
-  background: #3e9c98;
-  box-shadow: 0 5px 10px black;
+  /* background: #3e9c98; */
+  background-color: #34A0A4;
+  /* box-shadow: 0 5px 10px black;
+  box-shadow: 0 5px 10px #34A0A4; */
   padding: 25px 9%;
   display: flex;
   align-items: center;
@@ -32,14 +41,11 @@ header {
   position: relative;
 }
 
-header .logo {
-  font-size: 25px;
-}
-
 header .navbar ul li {
   position: relative;
   float: left;
   font-family: "Work Sans", sans-serif;
+  list-style-type: none;
 }
 
 header .navbar ul li a {
@@ -90,21 +96,7 @@ header .navbar ul li:hover > ul {
   }
 }
 
-@media screen and (max-width: 701px) {
-  header .navbar ul li a {
-    font-size: 17px;
-    padding: 5px;
-  }
-}
-
 @media screen and (max-width: 692px) {
-  header .navbar ul li a {
-    font-size: 17px;
-    padding: 5px;
-  }
-}
-
-@media screen and (max-width: 691px) {
   header .navbar ul li a {
     font-size: 17px;
     padding: 5px;
@@ -139,12 +131,6 @@ header .navbar ul li:hover > ul {
   }
 }
 
-/* .logo {
-  position: relative;
-  width: 70px;
-  height: 60px;
-} */
-
 .emoji-btn {
   display: block;
   width: 10%;
@@ -167,14 +153,14 @@ header .navbar ul li:hover > ul {
 
 footer {
   background-color: #3e9c98;
-  width: 100vw;
+  width: 100%;
   position: relative;
   padding: 20px;
   display: block;
   text-align: center;
   display: flex;
   bottom: 0px;
-  margin: 0;
+  margin: 2em 0em 0em 0em;
   bottom: 0px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
@@ -185,16 +171,16 @@ footer {
   margin-left: 30px;
 }
 
-h3 {
+footer h3 {
   display: inline;
   margin-left: 30px;
 }
 
-div {
+footer div {
   display: inline;
 }
 
-ul {
+footer ul {
   display: inline;
   margin-left: -20px;
 }
@@ -271,6 +257,8 @@ ul {
 
 body {
   background-color: rgb(172, 204, 180, 0.8);
+  background-color:#99D98C;
+  background-color: #168AAD;
   font-family: 'Work Sans', sans-serif;
   
 }
@@ -337,7 +325,7 @@ h2 {
     
   } */
   
-  p {
+  article p {
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border: solid 0.5px #52b69a;
