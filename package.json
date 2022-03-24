@@ -11,5 +11,12 @@
     "lsof": "^0.1.0",
     "node": "^17.7.1",
     "node-fetch": "^2.6.7"
-  }
+  },
+  "scripts": {
+    "test": "jest --watchAll",
+    "coverage": "jest --coverage"
+  },
+  "jest":{
+    "testEnvironment": "jsdom"
+}
 }

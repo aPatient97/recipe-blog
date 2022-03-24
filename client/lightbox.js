@@ -29,3 +29,4 @@ lightbox.addEventListener('click', e => {
     lightbox.classList.remove('active')
 })
 
+module.exports = {lightboxFunction}

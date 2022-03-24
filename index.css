@@ -152,10 +152,10 @@ header .navbar ul li:hover > ul {
 }
 
 footer {
-  background-color: #3e9c98;
+  background-color: #34A0A4;
   width: 100%;
   position: relative;
-  padding: 20px;
+  padding: 3em;
   display: block;
   text-align: center;
   display: flex;
@@ -247,12 +247,6 @@ footer ul {
 
 
 /* MAIN */
-
-
-
-
-
-
 
 
 body {
