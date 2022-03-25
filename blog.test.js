@@ -1,6 +1,7 @@
-const lightboxFunction = require('./client/lightbox')
-
-
+const lightboxFunction = require('./lightbox')
+const fs = require('fs')
+const path = require('path')
+const html = fs.readFileSync(path.resolve(__dirname, './index.html'), 'utf-8')
 
 describe('lightbox tests', () => {
 
@@ -10,11 +11,21 @@ describe('lightbox tests', () => {
         })
     })
 
+    describe('index.html', () => {
+        beforeEach(() => {
+            document.documentElement.innerHTML = html.toString()
+        })
 
-    test('it creates a div with an ID of lightbox', () => {
-        
+        test('it has a page title', () => {
+            let h1 = document.querySelector('h1')
+            expect(h1.textContent).toContain('Welcome to Anonoblog')
+        })
+
+        test('it creates a div with ID of lightbox', () => {
+            let lightbox = document.querySelector('#lightbox')
+            expect(lightbox.className).toBe('lightbox')
+        })
     })
 
-
-} ) 
+}) 
 

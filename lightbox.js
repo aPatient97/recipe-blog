@@ -10,13 +10,14 @@ const lightboxFunction = () => {
             lightbox.classList.add('active')
             let article = document.createElement('article')
             article.innerText = art.innerText
-            article.nodeValue = art.nodeValue
             while (lightbox.firstChild){
             lightbox.removeChild(lightbox.firstChild)}
             lightbox.appendChild(article)
         })
     })
  }   
+
+
 
 lightboxFunction()
 
@@ -30,3 +31,4 @@ lightbox.addEventListener('click', e => {
 })
 
 module.exports = {lightboxFunction}
+
