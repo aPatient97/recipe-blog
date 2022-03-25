@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #34A0A4;
+  font-family: "Work Sans", sans-serif;
+}
+
+
+.create-post-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1{
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-size: 2em;
+  margin: 0.5em 1em 0em 0em;
+  padding: 0.5em 1em;
+}
+
+h2 {
+  color: white;
+  text-align: left;
+  justify-self: flex-start;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-size: 2em;
+  margin: 0.5em 0em;
+  padding: 0.5em 1em;
+}
+
+form {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  padding: 2em 0em;
+  
+}
+
+form input {
+  padding: 1.5em;
+  margin: 1em 2em;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: solid 0.5px #52b69a;
+}
+
+textarea {
+    padding: 1.5em;
+    margin: 1em 2em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: solid 0.5px #52b69a;
+}
+
+#form-div {
+  background-color: white;
+  margin: 2em 2em;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width:760px) {
+    #form-div {
+        margin: 2em 10em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #form-div {
+        margin: 2em 20em;
+    }
+}
+
+#submit {
+    font-size: 1em;
+    background-color: #99D98C;
+    cursor: pointer;
+    width: 90%;
+    margin: 1em 2em;
+    
+}
+
+label {
+    padding: 0em 1em 0em 1em;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+#blog-btn, #home-btn {
+  margin: 1em;
+  padding: 1.5em;
+  border-radius: 5px;
+  border: solid #99D98C;
+  background-color: #99D98C;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#blog-btn:hover, #home-btn:hover {
+  background-color: white;
+  color: #99D98C;
+}

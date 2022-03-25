@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./commentbox.script.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>Comment</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Comments</title>
+</head>
+<body>
+    <header>
+
+        <a href="index.html"><img src="anonoblog-8.png"></a>   
+           
+           <nav class="navbar">
+               <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="#">ABOUT US</a>
+                       <ul>
+                           <li class="home"><a href="#">OUR ANONYMOUS GURANTEE</a></li>
+                           <li class="aboutus"><a href="#">WHO ARE WE?</a></li>
+                           <li class="createblog"><a href="#">OUR MISSION</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="createPost.html">CREATE A BLOG</a></li>
+                   <li><a href="comment.html">COMMENT</a></li>
+                       
+               </ul>
+           </nav>
+       </header>
+    <div id= "wrapper">
+        <div id= "hdcomments">
+            <h3>Leave a Reply</h3>
+            <div id= "hdc_create_comment">
+                <!-- comment form-->
+                <label for = "hdc_comment_input" class = "hdc_label">Leave a Comment</label>
+                <textarea id="hdc_comment_input" rows="6" class = "hdc_input"></textarea>
+                <form>
+                    <label for="search">Search</label>
+                    <input id="search" type="search" />
+                    <button id="btnSearch">Go</button>
+                  </form>
+                  <div class="out"></div>
+            
+                <div id="hdc_comment_footer">
+                    <div id = "hdc_comment_reactions">
+                        <h4 id = "hdc_reaction_title">Reactions</h4>
+                        <span class ="hdc_reaction" data-reaction = "like">👍</span>
+                        <span class ="hdc_reaction" data-reaction = "laugh">😄</span>
+                        <span class ="hdc_reaction" data-reaction = "love">😍</span>
+                    </div>
+                    <button id = "hdc_submit">Submit</button>
+                </div>
+            </div>
+            <div id="hdc_comments">
+                <h3>Comments</h3>
+                <div class = "hdc_comment">
+                    <div class = "hdcomment_comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, hic?</p>
+                    </div>
+                    <div class="hdc_meta">
+                        <div class = "hdc_meta_date"></div>
+                        25 March 2022
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="comment.js"></script>
+</body>
+</html>
+</body>
+</html>
